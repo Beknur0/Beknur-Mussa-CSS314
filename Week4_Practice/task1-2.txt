@@ -1,0 +1,9 @@
+P (Threads)  | Avg Time (s)    | Status
+---------------------------------------------
+1            | 0.001213        | Completed
+2            | 0.001246        | Completed
+4            | 0.001932        | Completed
+8            | 0.002929        | Completed
+16           | 0.004003        | Completed
+32           | 0.005849        | Completed
+64           | 0.008927        | Completed

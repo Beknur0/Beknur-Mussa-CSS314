@@ -1,0 +1,7 @@
+Task 2.4 - Speedup & Efficiency Modeling
+
+Threads   Time (s)    Speedup     Efficiency    Efficiency %  
+1         0.1554      1.000       1.000         100.00        %
+2         0.0774      2.008       1.004         100.39        %
+4         0.0498      3.120       0.780         78.01         %
+8         0.0369      4.211       0.526         52.64         %

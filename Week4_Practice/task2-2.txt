@@ -1,0 +1,17 @@
+Task 2.2 - Critical Section Overhead
+N = 1,000,000
+Threads = 4
+
+Serial baseline:
+Pi             = 3.141592653590
+Absolute Error = 2.886579864025e-14
+Time           = 0.124546 s
+
+Critical section:
+Pi             = 3.141592653590
+Absolute Error = 2.176037128265e-14
+Time           = 0.352274 s
+
+Performance:
+Slowdown              = 2.83x
+Lock Contention Overhead = 182.85%

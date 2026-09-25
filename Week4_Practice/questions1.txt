@@ -1,0 +1,19 @@
+Question 1.1
+This is because the thread execution order is non-deterministic; it is determined not by your `for` loop, but by the OS scheduler and the system's current state. After the threads are created, the OS places the kernel threads into run queues and decides which thread gets a time slice on which core or logical CPU.
+
+Question 1.2
+When the number of active software threads P exceeds the number of physical cores, the system shifts from parallel execution to time-sharing: multiple threads begin to “share” the same core over time.
+
+Question 1.3
+The implicit barrier at the end of a parallel region guarantees that:
+1.all threads have completed their work within the parallel block,
+2.all writes to shared memory performed by the threads have “reached” the synchronization point (in OpenMP, this is part of the semantics: region completion implies execution synchronization).
+Without the barrier, the following risks would arise:
+1.use of incomplete results: the master thread or other threads might proceed to subsequent code that reads data not yet fully computed;
+2.race conditions and logic errors: a subsequent section might modify the same data structures while worker threads are still writing to them;
+3.resource management errors: for example, freeing or reinitializing a buffer that is still in use by threads.
+
+Question 1.4
+hardware thread = hardware execution slot;
+kernel thread = a thread visible to and scheduled by the OS;
+green/virtual thread = a language- or runtime-level thread that executes on top of kernel threads.

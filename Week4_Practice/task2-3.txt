@@ -1,0 +1,10 @@
+Task 2.3 - Strong Scaling Benchmark
+N = 100,000,000
+Trials per configuration = 5
+
+Threads   T1 (s)      T2 (s)      T3 (s)      T4 (s)      T5 (s)      Average (s)   Error         
+1         0.1545      0.1544      0.1559      0.1556      0.1563      0.1554        6.33e-13      
+2         0.0780      0.0773      0.0775      0.0773      0.0771      0.0774        1.17e-13      
+4         0.0722      0.0387      0.0483      0.0393      0.0503      0.0498        1.11e-13      
+8         0.0348      0.0384      0.0344      0.0385      0.0384      0.0369        2.18e-14      
+16        Not supported by current Numba configuration

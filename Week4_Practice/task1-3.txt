@@ -1,0 +1,5 @@
+Detected Logical CPU Cores: 12
+
+=== Running Saturation Test with P = 12 Threads ===
+Open your OS System Monitor (Task Manager / htop) to observe CPU utilization...
+Execution completed in: 13.0041 seconds
